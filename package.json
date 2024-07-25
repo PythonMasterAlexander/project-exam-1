@@ -1,0 +1,25 @@
+{
+  "name": "noroff_projectexam1_rebuild",
+  "version": "1.0.0",
+  "description": "Rebuild of Project Exam1 for Noroff front-end Development",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"tsc --watch\" \"live-server\" \"sass --watch src/scss:dist/css\"",
+    "jsdocs": "jsdoc ./src/scripts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jsdoc": "^4.0.3",
+    "live-server": "^1.2.2",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "braces@<3.0.3": ">=3.0.3"
+    }
+  }
+}
